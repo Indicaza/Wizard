@@ -1,7 +1,8 @@
 {
-  "name": "wiz-biz",
+  "name": "Wizard",
   "version": "1.0.0",
-  "description": "Scene exported with Spline",
+  "description": "Maya to threeJS",
+  "homepage": "https://Indicaza.github.io/Wizard",
   "keywords": [
     "react",
     "spline",
@@ -13,13 +14,16 @@
     "@splinetool/runtime": "^0.9.94",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^2.1.3"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "gh-pages": "^4.0.0",
     "typescript": "4.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
